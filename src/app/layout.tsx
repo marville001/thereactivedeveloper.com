@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     title,
     description,
     images: [
-      "/me.png"
+      "/me.jpg"
     ],
   },
   twitter: {
     title,
     description,
     images: [
-      "/me.png"
+      "/me.jpg"
     ],
     card: "summary_large_image",
   },
