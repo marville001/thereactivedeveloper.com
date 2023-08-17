@@ -1,8 +1,10 @@
+import Header from "@/components/layout/Header";
+import { cn } from "@/lib/utils";
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const openSans = Open_Sans({ subsets: ['latin'] });
 
 const title = "Martin Mwangi (Marville001) - Software Developer: React, Next.js, Tailwind CSS";
 
@@ -42,7 +44,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark" id="martin">{children}</body>
+      <body className={cn("dark", openSans.className)} id="martin">
+        <div className="isolate">
+          <Header />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
