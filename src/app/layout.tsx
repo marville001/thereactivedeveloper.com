@@ -1,4 +1,4 @@
-import Header from "@/components/layout/Header";
+import Header from "@/components/shared/Header";
 import { cn } from "@/lib/utils";
 import '@/styles/globals.css';
 import type { Metadata } from 'next';

@@ -81,7 +81,7 @@
     position: absolute !important;
     overflow: auto;
     filter: blur(0px);
-    background-image: url(/background.png);
+    background-image: url(/assets/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
