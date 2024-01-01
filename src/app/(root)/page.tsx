@@ -2,6 +2,7 @@ import { Github, Link2, Link2Icon, Linkedin, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import HeroImage from "./hero-image";
+import ExperienceTimeline from "./experience-timeline";
 
 export default function Home() {
 
@@ -26,7 +27,7 @@ export default function Home() {
         'Implement Dashboards and admin panels for ecommerce products management, clinic management among other types of management systems',
       icon: '/icons/responsive-design1.png',
     },
-  ]
+  ];
 
   const portfolios: IProject[] = [
     {
@@ -64,7 +65,7 @@ export default function Home() {
       summary: "I love solving challenges. Some list for frontend ones",
       link: "https://myfrontendchallenges.netlify.app/",
     }
-  ]
+  ];
 
   const langs = [
     { id: 0, name: 'React JS', icon: '/icons/react.jpeg' },
@@ -86,7 +87,7 @@ export default function Home() {
     { id: 15, name: 'Bitbucket', icon: '/icons/bitbucket.png' },
     { id: 16, name: 'AWS', icon: '/icons/aws.png' },
     { id: 17, name: 'Yarn', icon: '/icons/yarn.png' },
-  ]
+  ];
 
   return (
     <section>
@@ -294,7 +295,7 @@ export default function Home() {
 
                 </div>
                 <Link href="/services" className="bg-primary text-white group-hover:bg-white group-hover:text-primary text-center cursor-pointer py-2 rounded-lg text-lg">
-                    Learn More
+                  Learn More
                 </Link>
               </div>
             ))}
@@ -337,7 +338,7 @@ export default function Home() {
           {/* Show More */}
           <div className="my-10 flex justify-center">
             <Link href="/portfolio" className="rounded-full bg-accent bg-opacity-80 hover:bg-opacity-100 tracking-wider px-8 py-2 capitalize text-sm text-white">
-                View All Projects
+              View All Projects
             </Link>
           </div>
         </div>
@@ -346,7 +347,7 @@ export default function Home() {
 
       {/* About Me */}
       <div className="py-8 text-white">
-        <div className="container flex flex-col items-center md:gap- py-16">
+        <div className="max-w-screen-lg mx-auto flex flex-col items-center md:gap- py-16">
           <h2 className="text-4xl font-bold ">About Me</h2>
           <div className="my-6">
             <Image
@@ -384,10 +385,10 @@ export default function Home() {
 
               <div className="my-10 flex flex-col gap-5 sm:flex-row justify-center">
                 <Link href="mailto:me@thereactivedeveloper.pro"
-                    target="_blank"
-                    className="inline-block rounded-full bg-accent py-3 px-8 text-center  text-[16px] font-semibold text-white hover:bg-opacity-80"
-                  >
-                    Contact Me Via Email
+                  target="_blank"
+                  className="inline-block rounded-full bg-accent py-3 px-8 text-center  text-[16px] font-semibold text-white hover:bg-opacity-80"
+                >
+                  Contact Me Via Email
                 </Link>
                 <Link
                   href="/cv.pdf"
@@ -400,6 +401,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <ExperienceTimeline />
         </div>
       </div>
     </section>
