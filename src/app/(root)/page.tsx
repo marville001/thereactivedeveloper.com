@@ -1,12 +1,97 @@
-import { Github, Link2, Linkedin, MapPin } from "lucide-react";
+import { Github, Link2, Link2Icon, Linkedin, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import HeroImage from "./hero-image";
 
 export default function Home() {
+
+  const services = [
+    {
+      id: 0,
+      name: 'Web Development',
+      description: 'Convert your graphics and design into a live website.',
+      icon: '/icons/web-dev.png',
+    },
+    {
+      id: 1,
+      name: 'Responsive Website Design',
+      description:
+        'Having a responsive layout means that your website fluidly resizes for optimal viewing regardless of the screen size or device (e.g.Desktop, iPhone, iPad).',
+      icon: '/icons/responsive-design1.png',
+    },
+    {
+      id: 2,
+      name: 'Dashboard Design',
+      description:
+        'Implement Dashboards and admin panels for ecommerce products management, clinic management among other types of management systems',
+      icon: '/icons/responsive-design1.png',
+    },
+  ]
+
+  const portfolios: IProject[] = [
+    {
+      id: 'allinonedashboardadd34dagdsd5h344',
+      image: "/assets/portfolio/dashboard-all-in-one.png",
+      title: "allinone-dashboard.vercel.app",
+      summary: "Dashboard. Contains Calendar, Editor, Color Picker, kanban and lots of charts",
+      link: "https://allinone-dashboard.vercel.app/",
+    },
+    {
+      id: 'lotteryapp244sfs535f3fs',
+      image: "/assets/portfolio/lottery-app.png",
+      title: "lottery-xi.vercel.app",
+      summary: "Lottery app made with NextJs and Web3 (solidity and thirdweb)",
+      link: "https://lottery-xi.vercel.app/",
+    },
+    // {
+    //   id: 'clinicdashboard5452435623f32543',
+    //   image: "/assets/portfolio/clinic-dashboard.png",
+    //   title: "my-clinic-app-app.vercel.app",
+    //   summary: "Clinic management made easy in one place.",
+    //   link: "https://my-clinic-app-app.vercel.app/",
+    // },
+    {
+      id: 'mediumsanity56344bhr34sd667s3yg36',
+      image: "/assets/portfolio/medium-2.0.png",
+      title: "mediumsanity.vercel.app",
+      summary: "Medium 2.0 App made with NextJs and Sanity.io",
+      link: "https://mediumsanity.vercel.app/",
+    },
+    {
+      id: 'myfrontendchallenges67546734674',
+      image: "/assets/portfolio/frontend-challenges.png",
+      title: "myfrontendchallenges.netlify.app",
+      summary: "I love solving challenges. Some list for frontend ones",
+      link: "https://myfrontendchallenges.netlify.app/",
+    }
+  ]
+
+  const langs = [
+    { id: 0, name: 'React JS', icon: '/icons/react.jpeg' },
+    { id: 12, name: 'Angular', icon: '/icons/angular.png' },
+    { id: 1, name: 'Node JS', icon: '/icons/nodejs.jpeg' },
+    { id: 2, name: 'Tailwind CSS', icon: '/icons/tailwindcss.jpeg' },
+    { id: 3, name: 'Typescript', icon: '/icons/typescript.png' },
+    { id: 18, name: 'GraphQl', icon: '/icons/graphql.png' },
+    { id: 4, name: 'Bootstrap', icon: '/icons/bootstrap.jpeg' },
+    { id: 5, name: 'HTML 5', icon: '/icons/html5.png' },
+    { id: 6, name: 'CSS 3', icon: '/icons/css3.png' },
+    { id: 7, name: 'Mongo DB', icon: '/icons/mongodb.jpeg' },
+    { id: 8, name: 'Git', icon: '/icons/git.png' },
+    { id: 9, name: 'MySQL', icon: '/icons/mysql.png' },
+    { id: 10, name: 'Sequelize', icon: '/icons/sequelize.png' },
+    { id: 11, name: 'Python', icon: '/icons/python.png' },
+    { id: 13, name: 'Docker', icon: '/icons/docker.png' },
+    { id: 14, name: 'Heroku', icon: '/icons/heroku.png' },
+    { id: 15, name: 'Bitbucket', icon: '/icons/bitbucket.png' },
+    { id: 16, name: 'AWS', icon: '/icons/aws.png' },
+    { id: 17, name: 'Yarn', icon: '/icons/yarn.png' },
+  ]
+
   return (
     <section>
 
+      {/* Hero */}
       <div className="section grid grid-cols-1 py-10 md:py-16 lg:py-20 md:max-h-[600px] md:grid-cols-2 max-w-screen-lg mx-auto">
 
         <div className="px-4 py-8 sm:px-10">
@@ -52,8 +137,10 @@ export default function Home() {
           <HeroImage />
         </div>
       </div>
+      <div className="bg-gray-400 my-0 h-[1px] hidden dark:block container bg-opacity-20"></div>
 
-      <div className="bg-gray-100 section dark:bg-dark dark:text-white">
+      {/* Experience */}
+      <div className="section bg-dark_ text-white">
         <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:py-20 md:grid-cols-2">
           <div className="z-20 px-2 py-10 sm:px-10">
             <h2 className="mb-6 text-3xl z-[2] capitalize font-bold text-dark dark:text-white">
@@ -88,7 +175,7 @@ export default function Home() {
                   Currently working with ReactJs, NodeJs, GraphQl, TypeScript and
                   PostgresDB
                 </p>
-                <Link href="/now"  className='inline-block px-4 py-1 mt-2 text-sm text-white rounded-md bg-primary'>View Current </Link>
+                <Link href="/now" className='inline-block px-4 py-1 mt-2 text-sm text-white rounded-md bg-primary'>View Current </Link>
               </div>
             </div>
           </div>
@@ -126,7 +213,7 @@ export default function Home() {
                 <Link2 className="text-lg opacity-50 lg:text-2xl" />
               </Link>
 
-              <p className="my-4 text-sm tracking-wide text-black opacity-70">
+              <p className="my-4 text-sm tracking-wide text-white opacity-70">
                 Contact me by WhatsApp, you will establish communication with me
                 directly. You will be able to ask or make arrangement for further
                 communications about any task you have.
@@ -148,6 +235,173 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Language and tools */}
+      <div
+        style={{
+          backgroundImage:
+            'url(/assets/gradient-islamic-pattern-background-vector.jpg)',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <div className="section  py-10 bg-dark text-white bg-opacity-95">
+          <div className="container">
+            <h1 className='text-center font-bold text-xl select-none mb-2 opacity-50'>TOOLS</h1>
+            <h2 className="text-center text-3xl font-bold text-dim-dark text-white">
+              Programming Languages and Tools
+            </h2>
+
+            <div className="my-10 flex flex-wrap justify-center gap-5">
+              {langs.map((lang) => (
+                <div
+                  key={lang.id}
+                  className="cursor-pointer group flex flex-col transition-all duration-100 ease-linear items-center p-3 px-5 hover:shadow bg-opacity-100 hover:bg-white rounded-lg"
+                >
+                  <Image height={56} width={56} className="object-cover" src={lang.icon} alt="" />
+                  <p className="mt-3 text-center text-sm group-hover:text-dark">{lang.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Services */}
+      <div className="section bg-dark_  text-white">
+        <div className="max-w-screen-lg mx-auto py-10">
+          <h2 className="mb-2 select-none text-center text-xl font-bold uppercase opacity-50">
+            Services
+          </h2>
+          <h3 className="text-center text-3xl font-bold capitalize text-dim-dark dark:text-white">
+            What I offer
+          </h3>
+
+          <div className="my-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 px-4">
+            {services.map((service) => (
+              <div
+                key={service.id}
+                className="group flex cursor-pointer  flex-col gap-6 rounded-md bg-white dark:bg-dim-dark p-2 sm:p-6 pb-6 transition-all duration-100 ease-in-out hover:bg-primary hover:text-white"
+              >
+                <div className="h-16 w-16 rounded-lg">
+                  <Image height={150} width={150} src={service.icon} alt="" className="!w-full !h-full object-cover" />
+                </div>
+
+                <div className="flex-1">
+
+
+                  <h4 className="text-lg font-bold">{service.name}</h4>
+                  <p className='mt-2'>{service.description}</p>
+
+                </div>
+                <Link href="/services" className="bg-primary text-white group-hover:bg-white group-hover:text-primary text-center cursor-pointer py-2 rounded-lg text-lg">
+                    Learn More
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-400 my-0 h-[1px] hidden dark:block container bg-opacity-20"></div>
+
+      {/* Portfolio */}
+      <div className="">
+        <div className="container py-8 lg:pt-16 dark:text-white">
+
+          <h1 className="mb-2 select-none text-center text-xl font-bold uppercase opacity-50">
+            featured projects
+          </h1>
+          <h2 className="text-center text-3xl mt-5 font-bold capitalize text-dim-dark dark:text-white">
+            What I have worked on
+          </h2>
+
+          {/* Portfolios */}
+          <div className="my-8 lg:my-16 grid select-none grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+            {portfolios.map(({ id, title, image, link, summary }: IProject) => (
+              <div
+                key={id}
+                className="relative min-h-[225px] group bg-opacity-40 hover:bg-opacity-100 justify-center
+                      rounded-xl duration-150 ease-linear  p-4 flex flex-col items-center">
+                <Image height={150} width={150} className='rounded-lg border !h-auto md:!h-52 !w-full object-cover'
+                  src={image} alt={title} />
+                <h4 className='self-start mt-4'>{summary}</h4>
+                <a href={link} target="_blank" rel="noopener noreferrer"
+                  className='bg-primary text-sm flex items-center gap-1.5 bg-opacity-20 px-2 underline py-1 mt-2 text-accent self-start rounded-lg'>
+                  <Link2Icon className='text-base' />
+                  <span className='font-light'>{title}</span>
+                </a>
+              </div>
+            ))}
+          </div>
+
+          {/* Show More */}
+          <div className="my-10 flex justify-center">
+            <Link href="/portfolio" className="rounded-full bg-accent bg-opacity-80 hover:bg-opacity-100 tracking-wider px-8 py-2 capitalize text-sm text-white">
+                View All Projects
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-400 my-0 h-[1px] hidden dark:block container bg-opacity-20"></div>
+
+      {/* About Me */}
+      <div className="py-8 text-white">
+        <div className="container flex flex-col items-center md:gap- py-16">
+          <h2 className="text-4xl font-bold ">About Me</h2>
+          <div className="my-6">
+            <Image
+              src="/assets/me.jpg"
+              className="rounded-full"
+              width={250}
+              height={250}
+              alt="Martin Mwangi"
+            />
+          </div>
+          <div className="flex flex-[3] flex-col items-center gap-2 md:items-start">
+            <div className="font-serif text-[16px] max-w-xl mx-auto leading-5 tracking-wide">
+              {/* <p className='text-center'>
+              First and foremost, I love writing code. Ever since writing my
+              first program in C and manipulating it to produce the desired
+              output, I have been obsessed with the idea of using software to
+              solve practical problems. For me, Computer Science is a
+              never-ending puzzle that I am passionately engaged in solving. I
+              believe in the power of programming to transform and improve the
+              lives of people around the world.
+            </p>
+            <p className='my-3 text-center'>
+              Software development has given me a purpose and a path which am
+              proud of and one I can follow for the rest of the time to come.
+              The creativity, organization, sequential processing, and
+              problem-solving involved keep me up at night with a never-ending
+              thirst to create beautiful, powerful things and share them with
+              the world.
+            </p> */}
+              <p className='text-center'>
+                Skills/Interests: JavaScript, React, TypeScript, Next, Express,
+                Node, Redux, StyledComponents, CSS, HTML, Git, GitLab, SQL,
+                PostgreSQL, MongoDB, Ms SQL, Docker among others
+              </p>
+
+              <div className="my-10 flex flex-col gap-5 sm:flex-row justify-center">
+                <Link href="mailto:me@thereactivedeveloper.pro"
+                    target="_blank"
+                    className="inline-block rounded-full bg-accent py-3 px-8 text-center  text-[16px] font-semibold text-white hover:bg-opacity-80"
+                  >
+                    Contact Me Via Email
+                </Link>
+                <Link
+                  href="/cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Martin Resume"
+                  className="rounded-full border border-accent text-accent hover:text-white hover:bg-accent px-8 py-3 text-center text-[16px] font-semibold">
+                  Download My CV
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

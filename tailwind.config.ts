@@ -18,6 +18,7 @@ const config: Config = {
     extend: {
       colors: {
         "dark": "#141729",
+        'dim-dark': '#122541',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
