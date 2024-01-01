@@ -1,3 +1,4 @@
+import { Footer } from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 import { cn } from "@/lib/utils";
 import '@/styles/globals.css';
@@ -50,6 +51,7 @@ export default function RootLayout({
           <div className="mt-32">
             {children}
           </div>
+          <Footer />
         </main>
       </body>
     </html>
