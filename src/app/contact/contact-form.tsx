@@ -61,7 +61,7 @@ const ContactForm = () => {
 						  },
 					  })}
 					  placeholder="Enter your name here."
-					  className={`w-full border-0 py-3 px-3 text-lg dark:bg-dim-dark outline-none ring-1 ${errors.name ? 'ring-red-400' : 'ring-primary'
+					  className={`w-full border-0 py-3 px-3 text-lg dark:bg-dark outline-none ring-1 ${errors.name ? 'ring-red-400' : 'ring-dark'
 						  } focus:border-0 focus:outline-none`}
 				  />
 			  </div>
@@ -80,7 +80,7 @@ const ContactForm = () => {
 						  },
 					  })}
 					  placeholder="Enter your email here."
-					  className={`w-full border-0 py-3 px-3 outline-none ring-1 dark:bg-dim-dark text-lg ${errors.email ? 'ring-red-400' : 'ring-primary'
+					  className={`w-full border-0 py-3 px-3 outline-none ring-1 dark:bg-dark text-lg ${errors.email ? 'ring-red-400' : 'ring-dark'
 						  } focus:border-0 focus:outline-none`}
 				  />
 			  </div>
@@ -100,7 +100,7 @@ const ContactForm = () => {
 					  },
 				  })}
 				  placeholder="Enter the subject here."
-				  className={`w-full border-0 py-3 px-3 outline-none ring-1 dark:bg-dim-dark text-lg ${errors.subject ? 'ring-red-400' : 'ring-primary'
+				  className={`w-full border-0 py-3 px-3 outline-none ring-1 dark:bg-dark text-lg ${errors.subject ? 'ring-red-400' : 'ring-dark'
 					  } focus:border-0 focus:outline-none`}
 			  />
 		  </div>
@@ -119,7 +119,7 @@ const ContactForm = () => {
 				  })}
 				  placeholder="Enter the message."
 				  rows={5}
-				  className={`w-full border-0 py-3 px-3 outline-none ring-1 dark:bg-dim-dark  text-lg ${errors.message ? 'ring-red-400' : 'ring-primary'
+				  className={`w-full border-0 py-3 px-3 outline-none resize-none ring-1 dark:bg-dark  text-lg ${errors.message ? 'ring-red-400' : 'ring-dark'
 					  } focus:border-0 focus:outline-none`}
 			  ></textarea>
 		  </div>
@@ -137,11 +137,11 @@ const ContactForm = () => {
 				  </button>
 			  </div>
 		  ) : (
-			  <div className="my-5 flex justify-center">
+			  <div className="my-5 flex justify-end">
 				  <button
 					  type="submit"
 					  disabled={state.submitting}
-					  className="cursor-pointer border-0 bg-accent px-10 py-2 rounded-full text-white outline-none ring-1 ring-accent focus:border-0 focus:outline-none disabled:cursor-not-allowed disabled:bg-opacity-75"
+					  className="cursor-pointer border-0 bg-accent px-10 py-2 rounded-lg text-white outline-none ring-1 ring-accent focus:border-0 focus:outline-none disabled:cursor-not-allowed disabled:bg-opacity-75"
 				  >
 					  {state.submitting ? (
 						  <Loader className="animate-spin" />

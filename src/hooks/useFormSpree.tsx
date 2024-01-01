@@ -26,7 +26,7 @@ const useFormSpree = (formSpreeId: string) => {
 					...prev,
 					submitting: false,
 					succeeded: true,
-					message: "Thanks for being awesome! I have received your message and would like to thank you for writing to me"
+					message: "Thanks for being awesome! I have received your message and would like to thank you for writing to me. You will hear from me soon :)"
 				}))
 
 

@@ -16,7 +16,7 @@ const Contact = () => {
         <p className='text-center max-w-xl text-lg lg:text-xl'>
           Feel free to contact me with questions about
           any of my project or services. I&apos;ll get back to you within 24 hours!{" "}
-          <Link target="_blank" href='tel:+254700207054' className="text-accent hover:underline">+254700207054</Link> {" "}
+          <Link target="_blank" href='tel:+254700207054' className="text-accent hover:underline">+254700207054</Link> {" "} or {" "}
           <Link target="_blank" href='mailto:me@thereactivedeveloper.pro' className="text-accent hover:underline">me@thereactivedeveloper.pro</Link>
         </p>
       </div>
