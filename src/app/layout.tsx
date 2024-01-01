@@ -1,4 +1,4 @@
-import { Footer } from "@/components/shared/footer_";
+import { Footer } from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 import { cn } from "@/lib/utils";
 import '@/styles/globals.css';
