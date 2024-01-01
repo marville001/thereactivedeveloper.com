@@ -1,4 +1,4 @@
-import Header from "@/components/shared/Header";
+import Header from "@/components/shared/header";
 import { cn } from "@/lib/utils";
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
@@ -45,10 +45,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("dark", openSans.className)} id="martin">
-        <div className="isolate">
+        <main className="isolate_">
           <Header />
-          {children}
-        </div>
+          <div className="mt-32">
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
