@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function Layout() {
 	return (
-		<div className="!bg-white dark:!bg-transparent">
+		<div>
 			<KeystaticApp />
 		</div>
 	);
