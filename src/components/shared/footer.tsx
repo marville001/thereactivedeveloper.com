@@ -4,8 +4,8 @@ export const Footer = ({ showInterest = true }) => {
   return (
     <div className="bg-dim-dark">
       {showInterest && (
-        <div className="container min-h-[200px] py-6 text-white">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="max-w-screen-lg mx-auto min-h-[200px] py-6 text-white">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
             <div>
               <h4 className="text-lg">Positions Of Interest</h4>
               <div className="my-2 h-[1px] w-16 bg-white bg-opacity-40"></div>
@@ -52,7 +52,7 @@ export const Footer = ({ showInterest = true }) => {
               </div>
             </div>
 
-            <div className="p-4 bg-white rounded-xl bg-opacity-10">
+            <div className="p-4 bg-white self-start rounded-xl bg-opacity-10 lg:col-span-2">
               <p className="text-xs tracking-wide">
                 NOTE: In case you have an idea for a project but you estimate
                 that your budget may be very small, do not refrain from
@@ -61,15 +61,15 @@ export const Footer = ({ showInterest = true }) => {
                 great projects, without cost being a barrier.
               </p>
 
-              <Link target="_blank" href="https://cal.com/marville001/30min" className="w-full py-2 mt-5 font-semibold text-center bg-white rounded-full text-dark hover:bg-opacity-80">
+              <Link target="_blank" href="https://cal.com/marville001/30min" className="w-full block py-2 mt-5 font-semibold text-center bg-white rounded-lg text-dark hover:bg-opacity-80">
                 Schedule a meeting
               </Link>
             </div>
           </div>
         </div>
       )}
-      <div className="py-10 bg-white dark:bg-dim-dark dark:text-white">
-        <div className="container flex flex-col items-start gap-4 md:flex-row md:justify-center">
+      <div className="py-10 bg-dim-dark text-white">
+        <div className="max-w-screen-lg mx-auto flex flex-col items-start gap-4 md:flex-row md:justify-center">
           <div className="flex flex-col flex-1">
             <p>
               This website has been designed and developed by me from scratch :)
@@ -81,7 +81,7 @@ export const Footer = ({ showInterest = true }) => {
           </div>
           <Link href="mailto:me@thereactivedeveloper.pro"
             target="_blank"
-            className="inline-block px-8 py-2 text-center text-white rounded-full bg-primary hover:bg-opacity-80"
+            className="px-8 py-2 text-center block text-white rounded-full bg-primary hover:bg-opacity-80"
           >
             Contact Me Via Email
           </Link>

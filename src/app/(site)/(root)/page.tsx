@@ -2,6 +2,7 @@ import { Github, Link2, Link2Icon, Linkedin, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import HeroImage from "./hero-image";
+import ExperienceTimeline from "./experience-timeline";
 
 export default function Home() {
 
@@ -26,7 +27,7 @@ export default function Home() {
         'Implement Dashboards and admin panels for ecommerce products management, clinic management among other types of management systems',
       icon: '/icons/responsive-design1.png',
     },
-  ]
+  ];
 
   const portfolios: IProject[] = [
     {
@@ -64,7 +65,7 @@ export default function Home() {
       summary: "I love solving challenges. Some list for frontend ones",
       link: "https://myfrontendchallenges.netlify.app/",
     }
-  ]
+  ];
 
   const langs = [
     { id: 0, name: 'React JS', icon: '/icons/react.jpeg' },
@@ -86,15 +87,15 @@ export default function Home() {
     { id: 15, name: 'Bitbucket', icon: '/icons/bitbucket.png' },
     { id: 16, name: 'AWS', icon: '/icons/aws.png' },
     { id: 17, name: 'Yarn', icon: '/icons/yarn.png' },
-  ]
+  ];
 
   return (
     <section>
 
       {/* Hero */}
-      <div className="section grid grid-cols-1 py-10 md:py-16 lg:py-20 md:max-h-[600px] md:grid-cols-2 max-w-screen-lg mx-auto">
+      <div className="section grid grid-cols-1 py-10 md:py-16 lg:py-20 md:min-h-[600px] items-center md:grid-cols-2 max-w-screen-lg mx-auto">
 
-        <div className="px-4 py-8 sm:px-10">
+        <div className="px-4 sm:px-10">
           <h2 className="flex items-center gap-4 font-bold text-dark dark:text-white opacity-30">
             <MapPin />
             <span>Nyeri, Kenya</span>
@@ -113,7 +114,7 @@ export default function Home() {
             <Link
               href="https://www.linkedin.com/in/marville001/"
               target="_blank"
-              className="flex items-center px-2 py-1 text-white rounded-md cursor-pointer bg-primary"
+              className="flex flex-1 sm:flex-none items-center px-2 py-1 text-white rounded-md cursor-pointer bg-primary"
             >
               <Linkedin className="pr-2 text-2xl" />
               <div className="h-4 w-[1px] bg-gray-300"></div>
@@ -123,7 +124,7 @@ export default function Home() {
             <Link
               href="https://github.com/marville001"
               target="_blank"
-              className="flex items-center px-2 py-1 text-white rounded-md cursor-pointer bg-primary"
+              className="flex flex-1 sm:flex-none items-center px-2 py-1 text-white rounded-md cursor-pointer bg-primary"
             >
               <Github className="pr-2 text-2xl" />
               <div className="h-4 w-[1px] bg-gray-300"></div>
@@ -132,9 +133,9 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="flex items-center justify-center overflow-hidden h-[400px]"
+          className="flex items-center justify-center"
         >
-          <HeroImage />
+          <Image src="/assets/developer.png" width={400} height={400} className="lg:!h-[450px] object-cover lg:!w-[450px]" alt="Developer" />
         </div>
       </div>
       <div className="bg-gray-400 my-0 h-[1px] hidden dark:block container bg-opacity-20"></div>
@@ -172,10 +173,9 @@ export default function Home() {
 
               <div className="my-4">
                 <p className="">
-                  Currently working with ReactJs, NodeJs, GraphQl, TypeScript and
-                  PostgresDB
+                  Currently working with TypeScript, Nextjs, NestJs, Angular and .NET
                 </p>
-                <Link href="/now" className='inline-block px-4 py-1 mt-2 text-sm text-white rounded-md bg-primary'>View Current </Link>
+                <Link href="/now" className='inline-block mt-2 text-sm underline underline-offset-4 rounded-md text-primary'>View Current </Link>
               </div>
             </div>
           </div>
@@ -294,7 +294,7 @@ export default function Home() {
 
                 </div>
                 <Link href="/services" className="bg-primary text-white group-hover:bg-white group-hover:text-primary text-center cursor-pointer py-2 rounded-lg text-lg">
-                    Learn More
+                  Learn More
                 </Link>
               </div>
             ))}
@@ -337,7 +337,7 @@ export default function Home() {
           {/* Show More */}
           <div className="my-10 flex justify-center">
             <Link href="/portfolio" className="rounded-full bg-accent bg-opacity-80 hover:bg-opacity-100 tracking-wider px-8 py-2 capitalize text-sm text-white">
-                View All Projects
+              View All Projects
             </Link>
           </div>
         </div>
@@ -346,7 +346,7 @@ export default function Home() {
 
       {/* About Me */}
       <div className="py-8 text-white">
-        <div className="container flex flex-col items-center md:gap- py-16">
+        <div className="max-w-screen-lg mx-auto flex flex-col items-center md:gap- py-16">
           <h2 className="text-4xl font-bold ">About Me</h2>
           <div className="my-6">
             <Image
@@ -384,10 +384,10 @@ export default function Home() {
 
               <div className="my-10 flex flex-col gap-5 sm:flex-row justify-center">
                 <Link href="mailto:me@thereactivedeveloper.pro"
-                    target="_blank"
-                    className="inline-block rounded-full bg-accent py-3 px-8 text-center  text-[16px] font-semibold text-white hover:bg-opacity-80"
-                  >
-                    Contact Me Via Email
+                  target="_blank"
+                  className="inline-block rounded-full bg-accent py-3 px-8 text-center  text-[16px] font-semibold text-white hover:bg-opacity-80"
+                >
+                  Contact Me Via Email
                 </Link>
                 <Link
                   href="/cv.pdf"
@@ -400,6 +400,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <ExperienceTimeline />
         </div>
       </div>
     </section>
