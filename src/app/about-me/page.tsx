@@ -2,6 +2,7 @@ import MyImage from "@/components/shared/my-image";
 import Image from "next/image";
 import Link from "next/link";
 import React from 'react'
+import ExperienceTimeline from "../(root)/experience-timeline";
 
 const AboutMe = () => {
   return (
@@ -57,6 +58,8 @@ const AboutMe = () => {
 				  </div>
 			  </div>
 		  </div>
+
+		  <ExperienceTimeline />
 	  </section>
   )
 }
