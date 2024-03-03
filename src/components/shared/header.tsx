@@ -13,18 +13,27 @@ const Header = () => {
 								<p className="sr-only">SiteGPT</p>
 							</Link>
 						</div>
-						<nav className="hidden md:flex md:items-center md:justify-center md:gap-5">
-							<ul>
-								<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/portfolio">Portfolio</Link>
-							</ul>
-							<ul>
-								<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/about-me" aria-current="page">About</Link>
-							</ul>
-							<ul>
-								<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/blog" aria-current="page">Blog</Link>
-							</ul>
-							<ul>
-								<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/contact" aria-current="page">Contact</Link>
+						<nav>
+							<ul className="hidden md:flex md:items-center md:justify-center md:gap-5">
+								<li>
+									<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/portfolio">Portfolio</Link>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100"
+										href="https://blog.thereactivedeveloper.com/"
+										aria-current="page"
+										rel="noopener noreferrer"
+
+									>Blog</a>
+								</li>
+								<li>
+									<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/about-me" aria-current="page">About Me</Link>
+								</li>
+								<li>
+									<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/contact" aria-current="page">Contact</Link>
+								</li>
 							</ul>
 						</nav>
 						<div className="flex items-center justify-end gap-3">
