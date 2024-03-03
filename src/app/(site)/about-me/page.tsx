@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from 'react'
 import ExperienceTimeline from "../(root)/experience-timeline";
+import type { Metadata } from "next";
+import { METADATAS } from "@/constants/metadata";
+
+export const metadata: Metadata = METADATAS.about;
 
 const AboutMe = () => {
   return (
@@ -16,9 +20,7 @@ const AboutMe = () => {
 			  <MyImage />
 
 			  <div className="flex justify-center">
-				  <Link href="/cv.pdf" target="_blank" rel="noopener noreferrer" download="Martin Resume" className="rounded-md dark:bg-accent bg-dark hover:tracking-wider transition-all duration-150 ease-linear dark:hover:bg-accent py-1.5 px-6 text-sm text-white">
-					  Download My CV
-				  </Link>
+				  <Link href={`/viewer?document=cv`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-accent text-sm font-semibold text-white shadow-sm transition-all duration-150 rounded px-6 py-2 hover:bg-accent/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Download My CV</Link>
 			  </div>
 		  </div>
 

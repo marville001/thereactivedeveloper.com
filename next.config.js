@@ -1,11 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: [
-            "res.cloudinary.com",
-            "thereactivedeveloper.com",
-            "www.mountaingoatsoftware.com",
-            "avatars.githubusercontent.com",
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "**.thereactivedeveloper.com",
+                pathname: "**",
+            },
+            {
+                protocol: "https",
+                hostname: "res.cloudinary.com",
+                pathname: "**",
+            },
+            {
+                protocol: "https",
+                hostname: "avatars.githubusercontent.com",
+                pathname: "**",
+            },
+            {
+                protocol: "https",
+                hostname: "www.mountaingoatsoftware.com",
+                pathname: "**",
+            },
         ],
     },
 };
