@@ -390,10 +390,9 @@ export default function Home() {
                   Contact Me Via Email
                 </Link>
                 <Link
-                  href="/cv.pdf"
+                  href={`/viewer?document=cv`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="Martin Resume"
                   className="rounded-full border border-accent text-accent hover:text-white hover:bg-accent px-8 py-3 text-center text-[16px] font-semibold">
                   Download My CV
                 </Link>

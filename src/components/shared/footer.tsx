@@ -6,7 +6,7 @@ export const Footer = ({ showInterest = true }) => {
       {showInterest && (
         <div className="max-w-screen-lg mx-auto min-h-[200px] py-6 text-white">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
-            <div>
+            <div className="px-4">
               <h4 className="text-lg">Positions Of Interest</h4>
               <div className="my-2 h-[1px] w-16 bg-white bg-opacity-40"></div>
 
@@ -29,7 +29,7 @@ export const Footer = ({ showInterest = true }) => {
               </div>
             </div>
 
-            <div>
+            <div className="px-4">
               <h4 className="text-lg">Salary Range</h4>
               <div className="my-2 h-[1px] w-16 bg-white bg-opacity-40"></div>
               <div className="mt-6">
@@ -68,7 +68,7 @@ export const Footer = ({ showInterest = true }) => {
           </div>
         </div>
       )}
-      <div className="py-10 bg-dim-dark text-white">
+      <div className="py-10 px-4 bg-dim-dark text-white">
         <div className="max-w-screen-lg mx-auto flex flex-col items-start gap-4 md:flex-row md:justify-center">
           <div className="flex flex-col flex-1">
             <p>

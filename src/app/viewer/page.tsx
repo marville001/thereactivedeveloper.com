@@ -9,7 +9,7 @@ const page = ({ searchParams }: { searchParams: { document: string; }; }) => {
 	const viewable_docs = [
 		{
 			key: 'cv',
-			doc_url: 'https://www.thereactivedeveloper.com/cv.pdf',
+			doc_url: 'https://www.thereactivedeveloper.com/docs/cv.pdf',
 			title: 'Martin Mwangi CV',
 			downloadable: true
 		}
