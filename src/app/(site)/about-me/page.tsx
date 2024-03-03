@@ -16,7 +16,7 @@ const AboutMe = () => {
 			  <MyImage />
 
 			  <div className="flex justify-center">
-				  <Link href="/cv.pdf" target="_blank" rel="noopener noreferrer" download="Martin Resume" className="rounded-md dark:bg-accent bg-dark hover:tracking-wider transition-all duration-150 ease-linear dark:hover:bg-accent py-1.5 px-6 text-sm text-white">
+				  <Link href={`/viewer?document=cv`} target="_blank" rel="noopener noreferrer" className="rounded-md dark:bg-accent bg-dark hover:tracking-wider transition-all duration-150 ease-linear dark:hover:bg-accent py-1.5 px-6 text-sm text-white">
 					  Download My CV
 				  </Link>
 			  </div>
