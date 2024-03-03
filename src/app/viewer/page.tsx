@@ -40,6 +40,8 @@ const page = ({ searchParams }: { searchParams: { document: string; }; }) => {
 					}
 				</div>
 
+				<hr className="my-6" />
+
 				<div className="my-4 ">
 					<iframe
 						src={`https://docs.google.com/gview?url=${doc.doc_url}&embedded=true`}
