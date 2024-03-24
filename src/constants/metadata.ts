@@ -13,14 +13,14 @@ const DEFAULT_METADATA = {
 		title,
 		description,
 		images: [
-			"/me.jpg"
+			"/assets/me.jpg"
 		],
 	},
 	twitter: {
 		title,
 		description,
 		images: [
-			"/me.jpg"
+			"/assets/me.jpg"
 		],
 		card: "summary_large_image",
 	},
