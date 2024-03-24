@@ -50,5 +50,17 @@ export const METADATAS: Record<string, Metadata> = {
 		title: "Martin Mwangi - Document Viewer",
 		metadataBase: new URL('https://thereactivedeveloper.com/viewer'),
 		description
+	},
+	portfolio: {
+		...DEFAULT_METADATA,
+		title: "Martin Mwangi - Portfolio",
+		metadataBase: new URL('https://thereactivedeveloper.com/portfolio'),
+		description: "Explore the digital portfolio of Martin Mwangi, a dedicated Frontend Developer. Discover the dynamic synergy of React, Next.js, and Tailwind CSS, and witness the flawless web experiences crafted by Martin Mwangi. Elevate your online presence with web solutions that reflect elegance, speed, and functionality, all curated by the mastery of Martin Mwangi."
+	},
+	archive: {
+		...DEFAULT_METADATA,
+		title: "Martin Mwangi - Archive",
+		metadataBase: new URL('https://thereactivedeveloper.com/archive'),
+		description
 	}
 };
