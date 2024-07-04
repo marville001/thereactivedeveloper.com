@@ -24,11 +24,11 @@ chatbotId: 'cly6s9ink00018msf58ekx645',
       <body className={cn("dark", openSans.className)}>
         {children}
 
-        <script src="https://app.chatflot.com/chatwindow.js"></script>
+        <script async src="https://app.chatflot.com/chatwindow.js"></script>
 
         <div id="chatflot-chatbot"> </div>
 
-        <script src="https://app.chatflot.com/chatbot.js"></script>
+        <script async src="https://app.chatflot.com/chatbot.js"></script>
       </body>
     </html>
   );
