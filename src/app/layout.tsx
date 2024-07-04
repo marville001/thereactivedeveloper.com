@@ -12,10 +12,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <script>
-      window.chatbotConfig = {
+      <script id="chatflot" dangerouslySetInnerHTML={{
+					__html: `
+     window.chatbotConfig = {
 chatbotId: 'cly6s9ink00018msf58ekx645',
 }
+     `}}>
+      
       </script>
       </head>
       <body className={cn("dark", openSans.className)}>
