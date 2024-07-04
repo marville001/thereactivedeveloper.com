@@ -6,7 +6,7 @@ export const experiences = [
 		company_name: "ClearStar- The Jitu, Alpharetta, GA",
 		icon: Workflow,
 		iconBg: "#3F5E5A",
-		date: "December, 2023 - Present",
+		date: "December, 2023 - May, 2024",
 		points: [
 			"Collaborates with cross-functional teams on Azure DevOps to deliver dependable background check solutions.",
 			"Proficient in C programming, demonstrating expertise in crafting robust and scalable applications.",
