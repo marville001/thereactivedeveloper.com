@@ -1,10 +1,19 @@
 // keystatic.config.ts
-import { config, fields, collection } from '@keystatic/core';
+import { config, fields, collection, LocalConfig, GitHubConfig } from '@keystatic/core';
+
+const isProd = process.env.NODE_ENV === 'production';
+
+const localMode: LocalConfig['storage'] = {
+	kind: 'local',
+};
+
+const githubMode: GitHubConfig['storage'] = {
+	kind: 'github',
+	repo: 'marville001/thereactivedeveloper.com',
+};
 
 export default config({
-	storage: {
-		kind: 'local',
-	},
+	storage: isProd ? githubMode : localMode,
 	collections: {
 		blogs: collection({
 			label: 'Blogs',
