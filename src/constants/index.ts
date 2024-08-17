@@ -1,6 +1,20 @@
 import { Workflow } from "lucide-react";
+import { title } from "process";
 
 export const experiences = [
+	{
+		title: "Software Engineer Consultant",
+		company_name: "MCB Group, Mauritius",
+		icon: Workflow,
+		iconBg: "#3F5E5A",
+		date: "June, 2024 - Present",
+		points: [
+			"Developed and maintained software applications for MCB Group, a leading financial institution in Mauritius.",
+			"Collaborated with cross-functional teams to deliver high-quality software solutions.",
+			"Utilized Agile methodologies to ensure timely delivery of software projects.",
+			"Refactor and optimize existing codebase to improve software performance and security.",
+		],
+	},
 	{
 		title: "Angular .NET Software Developer",
 		company_name: "ClearStar- The Jitu, Alpharetta, GA",

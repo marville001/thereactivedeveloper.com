@@ -1,5 +1,6 @@
 // keystatic.config.ts
 import { config, fields, collection, LocalConfig, GitHubConfig } from '@keystatic/core';
+import { ReactElement } from "react";
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -14,6 +15,15 @@ const githubMode: GitHubConfig['storage'] = {
 
 export default config({
 	storage: isProd ? githubMode : localMode,
+	ui: {
+		brand: {
+			name: 'The Reactive Developer',
+			mark: () => <img className="rounded-lg" src="/favicon-32x32.png" height={20} alt="TRD"/>,
+		},
+		navigation: {
+			writing: ['blogs']
+		}
+	},
 	collections: {
 		blogs: collection({
 			label: 'Blogs',
