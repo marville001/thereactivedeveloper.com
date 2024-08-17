@@ -29,9 +29,6 @@ const Header = () => {
 									>Blog</a>
 								</li>
 								<li>
-									<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/about-me" aria-current="page">About Me</Link>
-								</li>
-								<li>
 									<Link className="inline-block text-sm font-medium text-gray-100 transition-all duration-200 rounded-lg px-2 py-1 hover:bg-black hover:text-gray-100" href="/contact" aria-current="page">Contact</Link>
 								</li>
 							</ul>
