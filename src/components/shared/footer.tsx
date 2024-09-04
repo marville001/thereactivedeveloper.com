@@ -1,8 +1,22 @@
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = ({ showInterest = true }) => {
   return (
     <div className="bg-dim-dark">
+      <div className="flex justify-center py-6">
+        <a href="https://www.buymeacoffee.com/marville001" target="_blank">
+          <Image
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png"
+            alt="Buy Me A Coffee"
+            className="h-[60px] w-[217px]"
+            height={60}
+            width={217}
+            priority
+          />
+        </a>
+      </div>
+
       {showInterest && (
         <div className="max-w-screen-lg mx-auto min-h-[200px] py-6 text-white">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
@@ -34,7 +48,7 @@ export const Footer = ({ showInterest = true }) => {
               <div className="my-2 h-[1px] w-16 bg-white bg-opacity-40"></div>
               <div className="mt-6">
                 <h2>Annual</h2>
-                <p className='my-2 opacity-75'>Accepting custom offers</p>
+                <p className="my-2 opacity-75">Accepting custom offers</p>
                 {/* <p className="flex items-center gap-2 my-2">
                   <span className="text-sm text-white opacity-40">From</span>
                   <span>40,000 $USD</span>
@@ -42,7 +56,7 @@ export const Footer = ({ showInterest = true }) => {
                   <span>+150,000 $USD</span>
                 </p> */}
                 <h2>Per hour:</h2>
-                <p className='my-2 opacity-75'>Accepting custom offers</p>
+                <p className="my-2 opacity-75">Accepting custom offers</p>
                 {/* <p className="flex items-center gap-2 my-2">
                   <span className="text-sm text-white opacity-40">From</span>
                   <span>20.00 $USD</span>
@@ -56,12 +70,16 @@ export const Footer = ({ showInterest = true }) => {
               <p className="text-xs tracking-wide">
                 NOTE: In case you have an idea for a project but you estimate
                 that your budget may be very small, do not refrain from
-                contacting me and presenting your project to me. I&apos;m working to
-                provide flexible payment methods that allow us to carry out
-                great projects, without cost being a barrier.
+                contacting me and presenting your project to me. I&apos;m
+                working to provide flexible payment methods that allow us to
+                carry out great projects, without cost being a barrier.
               </p>
 
-              <Link target="_blank" href="https://cal.com/marville001/30min" className="w-full block py-2 mt-5 font-semibold text-center bg-white rounded-lg text-dark hover:bg-opacity-80">
+              <Link
+                target="_blank"
+                href="https://cal.com/marville001/30min"
+                className="w-full block py-2 mt-5 font-semibold text-center bg-white rounded-lg text-dark hover:bg-opacity-80"
+              >
                 Schedule a meeting
               </Link>
             </div>
@@ -75,11 +93,17 @@ export const Footer = ({ showInterest = true }) => {
               This website has been designed and developed by me from scratch :)
             </p>
             <p className="text-sm">
-              Copyright <span className="font-bold text-primary">@ Martin Mwangi</span>{' '}
+              Copyright{" "}
+              <span className="font-bold text-primary">
+                <a href="https://twitter.com/marville001" target="_blank">
+                  @ Martin Mwangi
+                </a>
+              </span>{" "}
               {new Date().getFullYear()}
             </p>
           </div>
-          <Link href="mailto:me@thereactivedeveloper.pro"
+          <Link
+            href="mailto:me@thereactivedeveloper.pro"
             target="_blank"
             className="px-8 py-2 text-center block text-white rounded-full bg-primary hover:bg-opacity-80"
           >
