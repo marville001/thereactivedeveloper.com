@@ -14,15 +14,19 @@ const githubMode: GitHubConfig['storage'] = {
 console.log({ isProd });
 
 export default config({
-	// storage: localMode,
-	storage: isProd ? githubMode : localMode,
+	storage: localMode,
+	// storage: isProd ? githubMode : localMode,
 	ui: {
 		brand: {
 			name: 'The Reactive Developer',
 			mark: () => <img className="rounded-lg" src="/favicon-32x32.png" height={20} alt="TRD" />,
 		},
 		navigation: {
-			writing: ['blogs', 'projects', "settings", 'work'],
+			writing: [
+				"settings",
+				'blogs',
+				 'projects', 'work'
+			],
 		}
 	},
 	collections: {
@@ -30,7 +34,7 @@ export default config({
 			label: 'Blogs',
 			slugField: 'title',
 			path: 'src/content/blogs/*',
-			format: { contentField: 'content' },
+			format: { contentField: 'summary' },
 			schema: {
 				title: fields.slug({ name: { label: 'Title' } }),
 				order: fields.number({ label: 'Order' }),
