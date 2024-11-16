@@ -14,8 +14,8 @@ const githubMode: GitHubConfig['storage'] = {
 console.log({ isProd });
 
 export default config({
-	storage: localMode,
-	// storage: isProd ? githubMode : localMode,
+	// storage: localMode,
+	storage: isProd ? githubMode : localMode,
 	ui: {
 		brand: {
 			name: 'The Reactive Developer',

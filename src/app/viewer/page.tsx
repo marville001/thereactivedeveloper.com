@@ -11,12 +11,12 @@ const page = async  ({ searchParams }: { searchParams: { document: string; }; })
 	const viewable_docs = [
 		{
 			key: 'cv',
-			doc_url: settings?.resume? `https://www.thereactivedeveloper.com${settings?.resume}` : 'https://www.thereactivedeveloper.com/docs/cv.pdf',
+			doc_url: settings?.resume? `https://www.thereactivedeveloper.com${settings?.resume}` : 'https://www.thereactivedeveloper.com/resume/resume.pdf',
 			title: 'Martin Mwangi CV',
 			downloadable: true
 		}
 	];
-	
+
 	const doc = viewable_docs.find((doc) => doc.key === searchParams?.document);
 
 	if (!doc || !searchParams?.document) {
