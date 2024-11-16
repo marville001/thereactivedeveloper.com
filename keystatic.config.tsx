@@ -1,6 +1,5 @@
 // keystatic.config.ts
 import { config, fields, collection, LocalConfig, GitHubConfig, singleton } from '@keystatic/core';
-import { ReactElement } from "react";
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -15,8 +14,8 @@ const githubMode: GitHubConfig['storage'] = {
 console.log({ isProd });
 
 export default config({
-	storage: localMode,
-	// storage: isProd ? githubMode : localMode,
+	// storage: localMode,
+	storage: isProd ? githubMode : localMode,
 	ui: {
 		brand: {
 			name: 'The Reactive Developer',
@@ -34,10 +33,18 @@ export default config({
 			format: { contentField: 'content' },
 			schema: {
 				title: fields.slug({ name: { label: 'Title' } }),
-				content: fields.markdoc({
-					label: 'Content',
-					extension: 'md',
+				order: fields.number({ label: 'Order' }),
+				link: fields.text({ label: 'External Link', validation: { isRequired: false } }),
+				tags: fields.array(fields.text({ label: 'Tag' }),
+					{ label: 'Tags', itemLabel: props => props.value || `Tag` }
+				),
+				coverImage: fields.image({
+					label: 'Cover Image',
+					directory: 'public/blogs/cover',
+					publicPath: '/blogs/cover/',
+					validation: { isRequired: true }
 				}),
+				summary: fields.markdoc({ label: 'Summary', extension: 'md', }),
 			},
 		}),
 		projects: collection({
@@ -204,6 +211,7 @@ export default config({
 				headline: fields.text({ label: 'Hero Headline' }),
 				summary: fields.text({ label: 'Hero Summary' }),
 				about: fields.markdoc({ label: 'About Me', extension: 'md' }),
+				hireMeLink: fields.text({ label: 'Hire Me Link' }),
 				contact: fields.object({
 					email: fields.text({ label: 'Email' }),
 					phone: fields.text({ label: 'Phone' }),
