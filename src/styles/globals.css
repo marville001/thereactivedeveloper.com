@@ -70,6 +70,19 @@
     body {
         @apply bg-background text-foreground;
     }
+
+    .content  h2 {
+        @apply mb-6 text-center !text-2xl font-bold
+    }
+    .content  p {
+        @apply max-w-[600px] mx-auto text-center text-lg !mt-4
+    }
+    .content  a {
+        @apply text-blue-400 underline
+    }
+    .content p strong {
+        @apply text-base text-accent
+    }
 }
 
 #martin {

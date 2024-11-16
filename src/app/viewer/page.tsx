@@ -1,20 +1,22 @@
 import { METADATAS } from "@/constants/metadata";
+import { keystaticReader } from '@/lib/keystatic';
 import Link from "next/link";
 import React from 'react';
 
 export const metadata = METADATAS.viewer;
 
-const page = ({ searchParams }: { searchParams: { document: string; }; }) => {
+const page = async  ({ searchParams }: { searchParams: { document: string; }; }) => {
+	const settings = await keystaticReader.singletons.settings.read();
 
 	const viewable_docs = [
 		{
 			key: 'cv',
-			doc_url: 'https://www.thereactivedeveloper.com/docs/cv.pdf',
+			doc_url: settings?.resume? `https://www.thereactivedeveloper.com${settings?.resume}` : 'https://www.thereactivedeveloper.com/docs/cv.pdf',
 			title: 'Martin Mwangi CV',
 			downloadable: true
 		}
 	];
-
+	
 	const doc = viewable_docs.find((doc) => doc.key === searchParams?.document);
 
 	if (!doc || !searchParams?.document) {
