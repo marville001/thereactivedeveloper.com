@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
 import React from 'react';
@@ -53,10 +54,9 @@ const MyPortfolio = async () => {
                       rounded-xl duration-150 ease-linearflex flex-col items-center"
 							>
 								<Link href={`/portfolio/${project.slug}`}>
-									<Image
+									<img
 										width={250}
 										height={750}
-										objectFit='fill'
 										className='rounded-lg border h-auto object-cover md:!h-52 !w-full'
 										src={project.entry.mainImage}
 										alt={project.entry.name}
