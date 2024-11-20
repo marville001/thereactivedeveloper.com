@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from 'react';
 import type { Metadata } from "next";
 import { METADATAS } from "@/constants/metadata";
-import { Github, Globe, Link2 } from "lucide-react";
+import { Github, Globe } from "lucide-react";
 import AnimatedSection from '@/components/animated-section';
 import { keystaticReader } from '@/lib/keystatic';
 
@@ -57,7 +57,7 @@ const MyPortfolio = async () => {
 										width={250}
 										height={750}
 										objectFit='fill'
-										className='rounded-lg border h-auto md:!h-52 !w-full'
+										className='rounded-lg border h-auto object-cover md:!h-52 !w-full'
 										src={project.entry.mainImage}
 										alt={project.entry.name}
 									/>
