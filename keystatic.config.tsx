@@ -11,10 +11,8 @@ const githubMode: GitHubConfig['storage'] = {
 	kind: 'github',
 	repo: 'marville001/thereactivedeveloper.com',
 };
-console.log({ isProd });
 
 export default config({
-	// storage: localMode,
 	storage: isProd ? githubMode : localMode,
 	ui: {
 		brand: {
