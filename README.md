@@ -1,6 +1,6 @@
 # Martin Mwangi - Full Stack Software Developer
 
-Hi there! I'm Martin Mwangi, a passionate Full Stack Software Developer based in [Your Location]. Welcome to my GitHub profile!
+Hi there! I'm Martin Mwangi, a passionate Full Stack Software Developer based in Kenya. Welcome to my GitHub profile!
 
 ## About Me
 
@@ -21,7 +21,7 @@ Hi there! I'm Martin Mwangi, a passionate Full Stack Software Developer based in
 
 ## Current Focus
 
-I'm currently focusing on honing my skills in Data Structures and Algorithms (DSA) to enhance my problem-solving abilities and create efficient solutions.
+I'm currently focusing on honing my skills in .NET, Nest.js & Data Structures and Algorithms (DSA) to enhance my problem-solving abilities and create efficient solutions.
 
 ## Let's Connect
 
