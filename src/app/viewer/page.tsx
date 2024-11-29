@@ -1,9 +1,6 @@
-import { METADATAS } from "@/constants/metadata";
 import { keystaticReader } from '@/lib/keystatic';
 import Link from "next/link";
 import React from 'react';
-
-export const metadata = METADATAS.viewer;
 
 const page = async  ({ searchParams }: { searchParams: { document: string; }; }) => {
 	const settings = await keystaticReader.singletons.settings.read();

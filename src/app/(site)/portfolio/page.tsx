@@ -1,13 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from 'react';
-import type { Metadata } from "next";
-import { METADATAS } from "@/constants/metadata";
 import { Github, Globe } from "lucide-react";
 import AnimatedSection from '@/components/animated-section';
 import { keystaticReader } from '@/lib/keystatic';
-
-export const metadata: Metadata = METADATAS.portfolio;
 
 const MyPortfolio = async () => {
 	const readProjects = (await keystaticReader.collections.projects.all());

@@ -1,10 +1,5 @@
-import type { Metadata } from "next";
-import { METADATAS } from "@/constants/metadata";
-
-export const metadata: Metadata = METADATAS.archive;
 
 const ArchivedProjects = () => {
-
 	return (
 		<section className="lg:py-4">
 			<div className="md:px-6 dark:text-white mx-auto min-h-[60vh] max-w-[900px] py-10 md:py-24 px-2 sm:px-4">
