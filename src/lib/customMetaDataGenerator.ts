@@ -14,7 +14,7 @@ interface PageSEOProps {
 
 export function customMetaDataGenerator({
 	title,
-	description = "Welcome to our store",
+	description = "Martin Mwangi is a Full Stack Developer with a passion for web development. He is skilled in Next.js, React.js, Tailwind CSS, TypeScript, GraphQL, NodeJs, Postgres, MongoDB, AWS, Azure, DevOps, and Mentoring.",
 	canonicalUrl = 'https://thereactivedeveloper.com',
 	ogType = "website",
 	ogImage = "https://thereactivedeveloper.com/assets/me.jpg",
@@ -22,7 +22,7 @@ export function customMetaDataGenerator({
 	keywords = ["next.js", "Nextjs", "React", "React.js", "Tailwind CSS", "TypeScript", "GraphQL", "NodeJs",  "Postgres", "MongoDB", "AWS", "Azure", "DevOps", "Mentor", ...metadataKeywords],
 }: PageSEOProps): Metadata {
 
-	const siteTitle = "Martin Mwangi (Marville001)";
+	const siteTitle = "Martin Mwangi";
 	const fullTitle = `${title} | ${siteTitle}`;
 
 	return {
