@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 
-const title = "Martin Mwangi (Marville001) - Software Developer: React, Next.js, Tailwind CSS";
-
-const description = "Discover the digital prowess of Martin Mwangi, a dedicated Frontend Developer. Through the dynamic synergy of React, Next.js, and Tailwind CSS, Martin crafts flawless web experiences that captivate and engage. With a keen focus on user-centric design and backed by Express.js and Node.js expertise, Martin Mwangi brings your digital aspirations to life. Elevate your online presence with web solutions that reflect elegance, speed, and functionality, all curated by the mastery of Martin Mwangi.";
+const title = "Martin Mwangi - Software Developer: Tailwind CSS React, Next.js, Nest.js, .NET Core, Node.js, Express.js, and MongoDB";
+const description = "Discover the digital prowess of Martin Mwangi (Marville001), a dedicated Frontend Developer. Through the dynamic synergy of React, Next.js, and Tailwind CSS, Martin crafts flawless web experiences that captivate and engage. With a keen focus on user-centric design and backed by Express.js and Node.js expertise, Martin Mwangi brings your digital aspirations to life. Elevate your online presence with web solutions that reflect elegance, speed, and functionality, all curated by the mastery of Martin Mwangi.";
 
 const DEFAULT_METADATA = {
 	icons: {
@@ -64,3 +63,32 @@ export const METADATAS: Record<string, Metadata> = {
 		description
 	}
 };
+
+export const metadataKeywords = [
+	"fullstack developer",
+	"web developer",
+	"software engineer",
+	"MERN stack",
+	"React developer",
+	"Node.js engineer",
+	"JavaScript specialist",
+	"web application developer",
+	"frontend developer",
+	"backend developer",
+	"cloud application architect",
+	"REST API developer",
+	"scalable web solutions",
+	"responsive web design",
+	"performance optimization",
+	"database engineering",
+	"microservices architecture",
+	"web performance",
+	"enterprise software",
+	"modern web technologies",
+	"software design",
+	"agile development",
+	"technical problem solver",
+	"system integration",
+	"cloud computing",
+	"DevOps practices"
+];

@@ -3,15 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from 'react';
 import ExperienceTimeline from "../(root)/experience-timeline";
-import type { Metadata } from "next";
-import { METADATAS } from "@/constants/metadata";
 import { keystaticReader } from '@/lib/keystatic';
 import Markdoc, { RenderableTreeNode } from '@markdoc/markdoc';
 
-export const metadata: Metadata = METADATAS.about;
-
 const Home = async () => {
-
 	const settings = await keystaticReader.singletons.settings.read();
 
 	let showAbout = true;
