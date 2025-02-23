@@ -42,7 +42,7 @@ export default async function ProjectDetails({
 					<div className="max-w-[1200px] mx-auto px-4  py-10 md:py-20">
 						<div className="max-w-4xl mx-auto">
 							<h2 className="text-5xl font-bold mb-6">{readProject.name}</h2>
-							<p className="text-xl mb-8 leading-relaxed">{readProject.summary}</p>
+							<p className="text-lg mb-8 leading-relaxed">{readProject.summary}</p>
 							<div className="flex flex-wrap gap-4 mb-8">
 								{readProject.techStack.map((tech) => (
 									<Badge key={tech.name} variant="secondary" className="text-sm capitalize">
