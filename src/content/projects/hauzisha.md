@@ -16,6 +16,9 @@ images:
   - /projects/gallery/hauzisha/images/3.png
 tags:
   - nextjs
+  - seo
+  - reactjs
+  - server component
 techStack:
   - category: frontend
     name: NextJs
