@@ -6,7 +6,7 @@ import AnimatedSection from '@/components/animated-section';
 import { keystaticReader } from '@/lib/keystatic';
 
 const MyPortfolio = async () => {
-	const readProjects = (await keystaticReader.collections.projects.all());
+	const readProjects = await keystaticReader.collections.projects.all();
 	const allProjects = readProjects.sort((a, b) => (a.entry.order??0) - (b.entry.order??0))
 
 	return (
