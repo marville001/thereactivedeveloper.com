@@ -74,7 +74,7 @@ export default config({
 				summary: fields.text({
 					label: 'Summary',
 					multiline: true,
-					validation: { length: { min: 10, max: 200 } }
+					validation: { length: { min: 10} }
 				}),
 				github: fields.text({
 					label: 'GitHub Repository',

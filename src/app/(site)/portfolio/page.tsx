@@ -62,7 +62,7 @@ const MyPortfolio = async () => {
 									<Link href={`/portfolio/${project.slug}`} className='hover:underline'>
 										<h2 className="text-xl font-semibold mb-2">{project.entry.name}</h2>
 									</Link>
-									<p className="text-muted-foreground mt-2">{project.entry.summary}</p>
+									<p className="text-muted-foreground mt-2 line-clamp-2">{project.entry.summary}</p>
 									<div className="flex flex-wrap gap-2 mt-2 mb-4">
 										{project.entry.techStack.map((tech) => (
 											<span

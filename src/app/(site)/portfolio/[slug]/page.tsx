@@ -10,6 +10,7 @@ import React from 'react';
 
 export async function generateStaticParams() {
 	const slugs = await keystaticReader.collections.projects.list();
+	
 	return slugs.map(slug => ({ slug: slug }));
 }
 
@@ -29,7 +30,6 @@ export default async function ProjectDetails({
 
 	return (
 		<div className="min-h-screen ">
-
 			<section
 				style={{
 					background: `url(${readProject.mainImage})`,
@@ -86,7 +86,7 @@ export default async function ProjectDetails({
 					<div className="bg-gray-900 rounded-2xl shadow-xl overflow-hidden">
 						<div className="md:flex">
 							<div className="md:flex-1 p-2 md:p-8">
-								<div className='prose prose-sm prose-headings:text-white prose-p:text-gray-300 text-gray-300'>
+								<div className='prose prose-strong:text-slate-200 prose-sm prose-headings:text-white prose-p:text-gray-300 text-gray-300'>
 									{renderers.react(transformed, React, { components: {} })}
 								</div>
 							</div>
