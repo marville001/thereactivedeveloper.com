@@ -31,3 +31,24 @@ languages:
   - typescript
   - javascript
 ---
+## 🚀 AI Chatbot Showcase
+
+### 📝 Overview
+
+This AI-powered chatbot is built using **Next.js**, **OpenAI API**, **Prisma ORM**, and **PostgreSQL**. It offers seamless user interactions, stores chat history, and provides intelligent responses using OpenAI's GPT models.
+
+### 🛠️ Tech Stack
+
+- **Frontend**: Next.js (React, Server Components)
+- **Backend**: Next.js API routes, OpenAI API
+- **Database**: PostgreSQL (via Prisma ORM)
+- **Authentication**: NextAuth.js (optional)
+
+### 🎯 Features
+
+✅ **AI-Powered Chat** – Responds intelligently using OpenAI's GPT models\
+✅ **Chat History** – Stores conversations using PostgreSQL + Prisma\
+✅ **User Authentication** – Login via Google/GitHub (NextAuth.js)\
+✅ **Responsive UI** – Built with Tailwind CSS for a sleek look
+
+✅ **Real-time chat - Uses pusher for realtime capabilities**
