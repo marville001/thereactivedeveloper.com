@@ -12,7 +12,9 @@ duration:
   startDate: 2023-06-08
   endDate: 2024-10-15
 mainImage: /projects/featured/ai-chatbot/mainImage.png
-images: []
+images:
+  - /projects/gallery/ai-chatbot/images/0.png
+  - /projects/gallery/ai-chatbot/images/1.webp
 tags:
   - AI
 techStack:
