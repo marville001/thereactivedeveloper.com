@@ -7,7 +7,7 @@ summary: >-
   Helps with automating customer support chatbots by leveraging AI to create
   chatbots.
 github: https://github.com/marville001
-website: https://chatflot.vercel.app/
+website: https://links.trdevr.com/tp7yw7
 duration:
   startDate: 2023-06-08
   endDate: 2024-10-15
