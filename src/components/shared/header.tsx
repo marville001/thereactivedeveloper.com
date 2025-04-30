@@ -9,8 +9,8 @@ const Header = () => {
 					<div className="flex items-center justify-between">
 						<div className="flex shrink-0">
 							<Link className="flex items-center" href="/">
-								<Image height={60} width={60} className=" rounded-full" src="/assets/logo.png" alt="" />
-								<p className="sr-only">SiteGPT</p>
+								<Image height={60} width={60} priority className="  rounded-full" src="/assets/logo.png" alt="Martin Mwangi" />
+								<p className="sr-only">Martin Mwangi - trdevr.com</p>
 							</Link>
 						</div>
 						<nav>

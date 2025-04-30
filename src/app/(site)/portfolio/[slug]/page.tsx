@@ -2,7 +2,6 @@ import Image from "next/image";
 import { GitlabIcon as GitHub, ExternalLink } from "lucide-react";
 import { notFound } from 'next/navigation';
 import Markdoc, { renderers } from '@markdoc/markdoc';
-import RichContent from '@/components/rich-content';
 
 import { Badge } from "@/components/shared/badge";
 import { keystaticReader } from '@/lib/keystatic';
@@ -10,7 +9,6 @@ import React from 'react';
 
 export async function generateStaticParams() {
 	const slugs = await keystaticReader.collections.projects.list();
-	
 	return slugs.map(slug => ({ slug: slug }));
 }
 
