@@ -39,7 +39,7 @@ const Home = async () => {
 			</div>
 
 			<div className="mt-10 flex justify-center p-4 pb-0 ">
-				<Image height={500} width={600} src="/assets/hero-devices.svg" alt="" className='max-w-xl w-full' />
+				<Image height={500} width={600} src="/assets/hero-devices.svg" alt="" priority className='max-w-xl w-full' />
 			</div>
 
 			{showAbout &&
