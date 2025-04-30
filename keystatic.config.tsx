@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // keystatic.config.ts
 import { config, fields, collection, LocalConfig, GitHubConfig, singleton } from '@keystatic/core';
 
@@ -183,17 +184,16 @@ export default config({
 			schema: {
 				title: fields.slug({ name: { label: 'Title', validation: { isRequired: true } } }),
 				order: fields.number({ label: 'Order' }),
-				company: fields.text({ label: 'Company', validation: { isRequired: true } }),
 				position: fields.text({ label: 'Position', validation: { isRequired: true } }),
 				startDate: fields.date({ label: 'Start Date', validation: { isRequired: true } }),
 				endDate: fields.date({ label: 'End Date' }),
-				summary: fields.text({ label: 'Summary', multiline: true }),
-				website: fields.text({ label: 'Company Website' }),
+				company: fields.text({ label: 'Company', validation: { isRequired: true } }),
 				logo: fields.image({
 					label: 'Company Logo',
 					directory: 'public/work/logos',
 					publicPath: '/work/logos/',
 				}),
+				website: fields.text({ label: 'Company Website' }),
 				achievements: fields.array(
 					fields.text({ label: 'Achievement' }),
 					{
@@ -201,7 +201,7 @@ export default config({
 						itemLabel: props => props.value || 'Achievement',
 					}
 				),
-
+				summary: fields.markdoc({ label: 'Summary', extension: 'md', }),
 			}
 		}),
 	},
