@@ -103,7 +103,7 @@ export const Footer = ({ showInterest = true }) => {
             </p>
           </div>
           <Link
-            href="mailto:me@thereactivedeveloper.pro"
+            href="mailto:me@trdevr.com"
             target="_blank"
             className="px-8 py-2 text-center block text-white rounded-full bg-primary hover:bg-opacity-80"
           >

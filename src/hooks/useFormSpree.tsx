@@ -44,10 +44,6 @@ const useFormSpree = (formSpreeId: string) => {
 			}
 			return success
 		} catch (error: any) {
-			console.log("============ Contact Me On me@thereactivedeveloper.pro ================");
-			console.log(error?.message);
-			console.log("=======================================================================");
-
 			setState(prev => ({ ...prev, submitting: false, errored: true, message: "Oops! There was a problem submitting the form" }))
 			return false;
 		}
