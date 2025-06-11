@@ -7,7 +7,7 @@ export const experiences = [
 		company_name: "MCB Group, Mauritius",
 		icon: Workflow,
 		iconBg: "#3F5E5A",
-		date: "June, 2024 - Present",
+		date: "June, 2024 - May, 2025",
 		points: [
 			"Developed and maintained software applications for MCB Group, a leading financial institution in Mauritius.",
 			"Collaborated with cross-functional teams to deliver high-quality software solutions.",
