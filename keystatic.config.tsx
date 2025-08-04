@@ -215,6 +215,8 @@ export default config({
 				about: fields.markdoc({ label: 'About Me', extension: 'md' }),
 				hireMeLink: fields.text({ label: 'Hire Me Link' }),
 				contact: fields.object({
+					headline: fields.text({ label: 'Contact Headline' }),
+					summary: fields.text({ label: 'Contact Summary' }),
 					email: fields.text({ label: 'Email' }),
 					phone: fields.text({ label: 'Phone' }),
 					address: fields.text({ label: 'Address' }),
