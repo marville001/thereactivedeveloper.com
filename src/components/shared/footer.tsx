@@ -1,7 +1,9 @@
+import { keystaticReader } from '@/lib/keystatic';
 import Image from "next/image";
 import Link from "next/link";
 
-export const Footer = ({ showInterest = true }) => {
+export const Footer = async ({ showInterest = true }) => {
+  const settings = await keystaticReader.singletons.settings.read();
   return (
     <div className="bg-dim-dark">
       <div className="flex justify-center py-6">
@@ -103,7 +105,7 @@ export const Footer = ({ showInterest = true }) => {
             </p>
           </div>
           <Link
-            href="mailto:me@trdevr.com"
+            href={`mailto:${settings?.contact?.email}`}
             target="_blank"
             className="px-8 py-2 text-center block text-white rounded-full bg-primary hover:bg-opacity-80"
           >
