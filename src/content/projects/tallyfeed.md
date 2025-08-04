@@ -6,7 +6,7 @@ featured: true
 summary: >-
   Tallyfeed is an intuitive platform that makes collecting, organizing, and
   acting on customer feedback a breeze.
-website: https://app.tallyfeed.com/
+website: https://tallyfeed.com/
 duration:
   startDate: 2024-12-15
 mainImage: /projects/featured/tallyfeed/mainImage.avif
