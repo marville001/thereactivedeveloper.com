@@ -8,7 +8,7 @@ const MyStory = () => {
 			<div className="my-16">
 
 				<h1 className="text-center text-4xl my-8 font-sans font-bold tracking-wider text-dark dark:text-white">
-					How I Became a Software Developer
+					How I Became a Software Engineer
 				</h1>
 				<p className="my-6 text-xl text-center dark:text-white">You will be suprised :) I wanted to be one</p>
 

@@ -35,8 +35,7 @@ const AboutMe = () => {
 						  <Link className='text-blue-400 underline' href="https://www.dkut.ac.ke/" target="_blank" rel="noopener noreferrer">
 							  Dedan Kimathi University Of technology
 						  </Link>
-						  . I&apos;m currently a Software Developer working with ReactJs,
-						  Angular, NodeJs, GraphQl, Postgres, MongoDB and TypeScript.
+						  . I&apos;m currently a Software Developer working with .NET, NestJs, React, NextJs, Angular, NodeJs, TypeScript, PostgreSQL and MongoDB.
 					  </p>
 
 					  <p className="max-w-[600px] mx-auto text-center py-4 text-lg ">
