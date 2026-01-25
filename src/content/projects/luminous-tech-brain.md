@@ -31,5 +31,30 @@ techStack:
   - category: frontend
     name: Next.js
     version: '15'
-languages: []
+languages:
+  - typescript
+  - javascript
 ---
+### **1. Introduction**
+
+Luminous TechBrains is an innovative educational platform based in Nairobi, Kenya, designed to bridge the digital skills gap for students aged 6–18. The platform serves as a central hub for hands-on learning in **Artificial Intelligence, Robotics, Coding, and Cyber Safety**.
+
+The goal of the project was to create a modern, high-performance web presence that facilitates program enrollment, showcases student impact, and manages partnerships with schools. It emphasizes accessibility and interactive learning, positioning technology as a "superpower" for the next generation of creators.
+
+### **2. Tech Stack**
+
+*The website was developed by **McDorcis Solutions (I as one of the Lead)**, utilizing a modern stack focused on speed, responsiveness, and scalability:*
+
+- **Frontend:** Next.js, HTML5, CSS3, and TypeScript (ES6+).
+- **UI/UX Framework:**  Built with a responsive framework, **Tailwind CSS**  to ensure a "mobile-first" experience for parents and students on various devices.
+- **Animation & Interactivity:** Modern JS libraries to handle smooth transitions, scroll animations, and interactive program cards.
+- **Backend/CMS:** Custom integration to manage course listings, blog updates, and student registrations.
+- **Deployment:** Cloud-hosted for high availability and low latency in the East African region.
+
+### **3. Results & Impact**
+
+The platform has successfully transitioned from a local initiative to a scalable digital brand with measurable results:
+
+- **Student Reach:** Successfully empowered **50+ students** through specialized tech programs.
+- **High Engagement:** Achieved a **95% parent satisfaction rate**, evidenced by high referral rates and positive student feedback.
+- **Global Standards:** Developed a curriculum that prepares Kenyan students for global computer science standards, moving beyond basic digital literacy to advanced AI and Robotics concepts.
