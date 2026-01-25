@@ -43,7 +43,7 @@ The goal of the project was to create a modern, high-performance web presence th
 
 ### **2. Tech Stack**
 
-*The website was developed by **McDorcis Solutions (I as one of the Lead)**, utilizing a modern stack focused on speed, responsiveness, and scalability:*
+*The website was developed by [**McDorcis Solutions**](https://www.mcdorcis.com/)**(I as one of the Lead)**, utilizing a modern stack focused on speed, responsiveness, and scalability:*
 
 - **Frontend:** Next.js, HTML5, CSS3, and TypeScript (ES6+).
 - **UI/UX Framework:**  Built with a responsive framework, **Tailwind CSS**  to ensure a "mobile-first" experience for parents and students on various devices.
