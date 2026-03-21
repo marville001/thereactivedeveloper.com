@@ -61,8 +61,8 @@ const ContactForm = () => {
 						  },
 					  })}
 					  placeholder="Enter your name here."
-					  className={`w-full border-0 py-3 px-3 text-lg dark:bg-dark outline-none ring-1 ${errors.name ? 'ring-red-400' : 'ring-dark'
-						  } focus:border-0 focus:outline-none`}
+					  className={`w-full border-0 dark:border-2 py-3 px-3 text-lg dark:bg-dark outline-none ring-1 ${errors.name ? 'ring-red-400' : 'ring-dark'
+						  } focus:border-0 dark:focus:border-2 focus:outline-none`}
 				  />
 			  </div>
 
@@ -80,8 +80,8 @@ const ContactForm = () => {
 						  },
 					  })}
 					  placeholder="Enter your email here."
-					  className={`w-full border-0 py-3 px-3 outline-none ring-1 dark:bg-dark text-lg ${errors.email ? 'ring-red-400' : 'ring-dark'
-						  } focus:border-0 focus:outline-none`}
+					  className={`w-full border-0 dark:border-2 py-3 px-3 outline-none ring-1 dark:bg-dark text-lg ${errors.email ? 'ring-red-400' : 'ring-dark'
+						  } focus:border-0 dark:focus:border-2 focus:outline-none`}
 				  />
 			  </div>
 		  </div>
@@ -100,8 +100,8 @@ const ContactForm = () => {
 					  },
 				  })}
 				  placeholder="Enter the subject here."
-				  className={`w-full border-0 py-3 px-3 outline-none ring-1 dark:bg-dark text-lg ${errors.subject ? 'ring-red-400' : 'ring-dark'
-					  } focus:border-0 focus:outline-none`}
+				  className={`w-full border-0 dark:border-2 py-3 px-3 outline-none ring-1 dark:bg-dark text-lg ${errors.subject ? 'ring-red-400' : 'ring-dark'
+					  } focus:border-0 dark:focus:border-2 focus:outline-none`}
 			  />
 		  </div>
 
@@ -119,8 +119,8 @@ const ContactForm = () => {
 				  })}
 				  placeholder="Enter the message."
 				  rows={5}
-				  className={`w-full border-0 py-3 px-3 outline-none resize-none ring-1 dark:bg-dark  text-lg ${errors.message ? 'ring-red-400' : 'ring-dark'
-					  } focus:border-0 focus:outline-none`}
+				  className={`w-full border-0 dark:border-2 py-3 px-3 outline-none resize-none ring-1 dark:bg-dark  text-lg ${errors.message ? 'ring-red-400' : 'ring-dark'
+					  } focus:border-0 dark:focus:border-2 focus:outline-none`}
 			  ></textarea>
 		  </div>
 
